@@ -1,0 +1,1 @@
+<?= 'Hallo '. $data['name']; ?>

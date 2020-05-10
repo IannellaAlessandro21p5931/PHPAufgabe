@@ -33,7 +33,11 @@ class Home extends Controller {
 
         // fehler meldung oder mail in file schreiben
         if($write == true){
-            fwrite($file, $_POST['mail']."\n");
+            fwrite($file, "E-Mail: ".$_POST['mail']."\n");
+            fwrite($file, "Vorname: ".$_POST['vorname']."\n");
+            fwrite($file, "Nachname: ".$_POST['nachname']."\n");
+            fwrite($file, "Strasse: ".$_POST['strasse']."\n");
+            fwrite($file, "Ort: ".$_POST['ort']."\n");
             echo $_POST['mail'].' wurde für Sie erfasst!';
         }else{
             echo $_POST['mail'].' wurde bereits erfasst!';

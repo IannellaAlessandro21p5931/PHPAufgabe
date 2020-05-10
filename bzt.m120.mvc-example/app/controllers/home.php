@@ -26,9 +26,9 @@ class Home extends Controller {
         //schauen ob mail schon registriert
         $write = true;
         while(!feof($file)){
-                if(trim(fgets($file)) == $_POST['mail']){
-                    $write = false;
-                }
+            if(trim(fgets($file)) == $_POST['mail']) {
+                $write = false;
+            }
         }
 
         // fehler meldung oder mail in file schreiben

@@ -108,12 +108,12 @@ class Home extends Controller {
                     break;
                 }
                 elseif($l[0] != $_POST['mail']){
-                    $this->goto('home', 'newsletter');
-                    echo 'Diese Mail ist noch nicht angemeldet';
-                    /*echo '
+                    //$this->goto('home', 'newsletter');
+                    //echo 'Diese Mail ist noch nicht angemeldet';
+                    echo '
                     Diese Mail ist noch nicht angemeldet
                     <br>
-                    <a href="/PHPAufgabe/bzt.m120.mvc-example/public/home/newsletter/'.$l[0].'/'.$_POST['mail'].'">Weiterleiten</a>';*/
+                    <a href="/PHPAufgabe/bzt.m120.mvc-example/public/home/newsletter/'.$l[0].'/'.$_POST['mail'].'">Weiterleiten</a>';
                 }
             }
         }
